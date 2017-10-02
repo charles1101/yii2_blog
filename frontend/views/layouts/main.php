@@ -37,6 +37,8 @@ AppAsset::register($this);
     $leftMenus = [
         ['label' => '首页', 'url' => ['/site/index']],
         ['label' => '文章', 'url' => ['/post/index']],
+	['label' => '留言', 'url' => ['/site/contact']],
+	['label' => '博客声明', 'url' => ['/site/about']],
     ];
     if (Yii::$app->user->isGuest) {
         $rightMenus[] = ['label' => Yii::t('common','Signup'), 'url' => ['/site/signup']];
@@ -72,11 +74,9 @@ AppAsset::register($this);
     </div>
 </div>
 
-<footer class="footer">
+<footer class="footer navbar-fixed-bottom">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="text-center">&copy; Charles的博客 <?= date('Y') ?></p>
     </div>
 </footer>
 

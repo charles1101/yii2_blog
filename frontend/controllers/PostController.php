@@ -47,6 +47,7 @@ class PostController extends BaseController
                 'class' => 'common\widgets\file_upload\UploadAction',
                 'config' => [
                     'imagePathFormat' => "/image/{yyyy}{mm}{dd}/{time}{rand:6}",
+		    "uploadFilePath" => "/usr/share/nginx/html/yii2_blog/frontend/web", /* 文件保存绝对路径   */
                 ]
             ],
 
@@ -56,6 +57,8 @@ class PostController extends BaseController
                 //上传图片配置
                 'imageUrlPrefix' => "", /* 图片访问路径前缀 */
                 'imagePathFormat' => "/image/{yyyy}{mm}{dd}/{time}{rand:6}", /* 上传保存路径,可以自定义保存路径和文件名格式 */
+		"uploadFilePath" => "/usr/share/nginx/html/yii2_blog/frontend/web", /* 文件保存绝对
+路径   */
                 ]
             ]
         ];

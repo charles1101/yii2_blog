@@ -3,7 +3,7 @@ use yii\helpers\Url;
 ?>
 <div class="panel">
     <div class="panel-title box-title" style="border-bottom:none">
-        <span><strong>只言片语</strong></span>
+        <span><strong>留言</strong></span>
         <span class="pull-right"><a href="" class="font-12">更多>></a></span>
     </div>
     <div class="panel-boy">

@@ -3,7 +3,7 @@ namespace frontend\controllers\base;
 /**
  * 基础控制器
  */
-use yii\web\controller;
+use yii\web\Controller;
 
 class BaseController extends Controller{
     public function beforeAction($action)

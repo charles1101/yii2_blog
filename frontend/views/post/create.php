@@ -26,6 +26,7 @@ $this->params['breadcrumbs'][] =$this->title;
 
             <?= $form->field($model, 'label_img')->widget('common\widgets\file_upload\FileUpload',[
                 'config'=>[
+		    //图片上传的一些配置，不写调用默认配置
                 ]
             ]) ?>
 
