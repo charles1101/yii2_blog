@@ -31,6 +31,5 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
     <div class="col-lg-3">
-        <a href="<?= Url::to('/post/create') ?>" class="btn btn-success btn-block btn-post">创建文章</a>
     </div>
 </div>

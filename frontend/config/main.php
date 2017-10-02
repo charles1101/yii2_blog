@@ -9,6 +9,7 @@ $params = array_merge(
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
+    'homeUrl' => '/',
     'language' => 'zh-CN',
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
@@ -16,6 +17,9 @@ return [
         'user' => [
             'identityClass' => 'common\models\UserModel',
             'enableAutoLogin' => true,
+        ],
+	'request' => [
+            'baseUrl' => '',
         ],
         'urlManager'=>[
             'enablePrettyUrl'=>true,

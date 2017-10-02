@@ -115,6 +115,7 @@ class UeditorAction extends Action
                 $fieldName = $this->config['fileFieldName'];
                 break;
         }
+	$config['uploadFilePath'] = isset($this->config['uploadFilePath'])?$this->config['uploadFilePath']:'';
         /* 生成上传实例对象并完成上传 */
         $up = new Uploader($fieldName, $config, $base64);
         /**

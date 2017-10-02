@@ -9,6 +9,7 @@ $params = array_merge(
 return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
+    'homeUrl' => '/admin',
     'language'=>'zh-CN',
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
@@ -17,6 +18,9 @@ return [
         'user' => [
             'identityClass' => 'common\models\AdminModel',
             'enableAutoLogin' => true,
+        ],
+	'request' => [
+            'baseUrl' => '/admin',
         ],
         'urlManager' => [
             'showScriptName'=> false,
