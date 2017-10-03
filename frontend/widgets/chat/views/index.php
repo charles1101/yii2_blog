@@ -6,7 +6,7 @@ use yii\helpers\Url;
         <span><strong>留言</strong></span>
         <span class="pull-right"><a href="" class="font-12">更多>></a></span>
     </div>
-    <div class="panel-boy">
+    <div class="panel-body">
         <form id="w0" action="/" method="post">
             <div class="form-group input-group field-feed-content required">
                 <textarea name="" id="feed-content" cols="30" rows="10" class="form-control" name="content"></textarea>
