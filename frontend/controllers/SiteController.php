@@ -224,6 +224,6 @@ class SiteController extends BaseController
                 return json_encode(['status'=>true]);
             }
         }
-        return json_decode(['status'=>false,'msg'=>'发布失败！']);
+        return json_encode(['status'=>false,'msg'=>'发布失败！']);
     }
 }
