@@ -3,6 +3,7 @@ namespace frontend\controllers;
 /**
  * 文章控制器
  */
+use frontend\models\CommentForm;
 use common\models\PostExtendModel;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
@@ -105,4 +106,20 @@ class PostController extends BaseController
 
         return $this->render('view',['data'=>$data]);
     }
+
+    /**
+     * 评论添加
+     */
+    public function actionAddComment()
+    {
+        $model = new CommentForm();
+        $model->content = Yii::$app->request->post('content');
+        if($model->validate()){
+            if($model->createComment()){
+                return json_encode(['status'=>true]);
+            }
+        }
+        return json_encode(['status'=>false,'msg'=>'发布失败！']);
+    }
+}
 }
