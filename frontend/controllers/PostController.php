@@ -122,4 +122,3 @@ class PostController extends BaseController
         return json_encode(['status'=>false,'msg'=>'发布失败！']);
     }
 }
-}

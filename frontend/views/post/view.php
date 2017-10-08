@@ -6,6 +6,7 @@
  * Time: 9:32
  */
 use yii\helpers\Url;
+use \frontend\widgets\comment\CommentWidget;
 
 $this->title = $data['title'];
 $this->params['breadcrumbs'][] = ['label'=>'文章','url'=>['post/index']];
@@ -29,7 +30,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 <span><a href="#"><?=$tag?></a></span>
             <?php endforeach;?>
         </div>
+        <div>
+            <?=CommentWidget::widget();?>
+        </div>
     </div>
     <div class="col-lg-3">
+
     </div>
 </div>
